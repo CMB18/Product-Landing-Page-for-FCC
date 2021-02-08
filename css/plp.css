@@ -1,12 +1,21 @@
+
 body {
-    background-color: #262626;
-    font-family: Arial, Helvetica, sans-serif;
-    flex: auto;
+background-color: #262626;
+font-family: Arial, Helvetica, sans-serif;
+flex: auto;
+text-align: center;
 }
 #header-img {
-    max-width: 500px;
+max-width: 500px;
 }
 nav-bar{
-    align-items: top
-;
+align-items: top;
+}
+/* For mobile phones: */
+[class*="col-"] {
+width: 100%;
+}
+.nav-link {
+    padding: 20px;
+    margin: 20px;
 }

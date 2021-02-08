@@ -4,7 +4,49 @@
         <html>
           
         <head>
+            <style>
+                .flex-conainer {
+    display: flex;
+}
+            /* For mobile phones: */
+            [class*="col-"] {
+            width: 100%;
+            }
+            
+            @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+            }
+            
+            @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            }
+        </style> 
             <link rel="stylesheet" type="text/css" href="css/plp.css">
+        
         </head>
         
         <body>
@@ -22,18 +64,21 @@
             <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theverge.com%2F2019%2F8%2F29%2F20808423%2Fapple-iphone-event-2019-date-time-rumors-macbook-pro-services&psig=AOvVaw0r8bAMSTfgOLANUamOEgYx&ust=1612823341403000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDk26fp2O4CFQAAAAAdAAAAABAD" id="header-img">
         </div>
             </header>
-            <h2 id="1"></h2>
-            <h3 id="2"></h3>
-            <h4 id="3"></h4>
+            <h2 id="1">first</h2>
+            <h3 id="2">second</h3>
+            <h4 id="3">third</h4>
             
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/uMT0Npn4-jE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            <form id="form">
-                    <input id="email" placeholder="enter email here" required>
-                   <input type="submit" id="submit">
-
-            </form>
-
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" type="email" name="email" placeholder="enter email here" required>
+                    <input type="submit" id="submit" value="submit">
+            </form> 
+            <div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
         </body>
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
